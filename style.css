@@ -1,0 +1,438 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 主體 */
+html,
+body {  
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+input {
+  padding: 12px 16px;
+  width: 304px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+}
+
+input::placeholder {
+  color: #9f9a91;
+}
+
+a {
+  font-size: 16px;
+  line-height: 23px;
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+/* 登入/註冊頁面 */
+.main {
+  background: #FFD370;
+  padding-top: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.main .left {
+  margin-right: 106px;
+}
+
+.main h1 {
+  font-size: 24px;
+  line-height: 35px;
+  /* text-align: center; */
+  margin-bottom: 24px;
+}
+
+.main .login .info {
+  color: #D87355;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.main .linkBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .btn {
+  width: 128px;
+  height: 47px;
+  background: #333333;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.main .btn:hover {
+  cursor: pointer;
+}
+
+.main .register input {
+  margin-bottom: 16px;
+}
+
+/* 代辦事項頁面 */
+.todo {
+  background: linear-gradient(172.7deg, #FFD370 5.12%, #FFD370 53.33%, #FFD370 53.44%, #FFFFFF 53.45%, #FFFFFF 94.32%);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.title a {
+  margin-left: 24px;
+  margin-right: 32px;
+}
+
+.contianer {
+  display: flex;
+  justify-content: center;
+}
+
+.todolist {
+  margin: 3rem auto 1.5rem auto;
+  padding: 0 12px;
+  width: 500px;
+}
+
+.card {
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.input {
+  padding: 4px 4px 4px 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input input {
+  width: 100%;
+}
+
+.btn_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #4b4b4b;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.btn_add:hover {
+  text-decoration: none
+}
+
+.card_list {
+  padding: 0;
+}
+
+.tab {
+  display: flex;
+  text-align: center;
+  color: #9f9a91;
+  font-size: 14px;
+}
+
+.tab li {
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 2px solid #efefef;
+}
+
+.tab li:hover {
+  cursor: pointer;
+}
+
+.tab li.active {
+  border-bottom: 2px solid #4b4b4b;
+  color: #4b4b4b;
+  font-weight: bold;
+}
+
+.cart_content {
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.list li {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.list li a.delete {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 30%;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("./img/Vector.png");
+  background-size: contain;
+}
+
+.list li:hover a.delete {
+  opacity: 1;
+}
+
+.list_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1rem 0.5rem;
+  font-size: 14px;
+}
+
+.list_footer a {
+  color: #9f9a91;
+  text-decoration: none;
+}
+
+.checkbox {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  display: block;
+  padding-left: 44px;
+  cursor: pointer;
+}
+
+.checkbox span {
+  display: block;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.5;
+}
+
+.checkbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.checkbox span::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  border: 1px solid #4b4b4b;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.checkbox span::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 27%;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 0.5rem;
+  border-radius: 1px;
+  border-bottom: 3px solid #FFD370;
+  border-right: 3px solid #FFD370;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.checkbox input:checked~span {
+  color: #9f9a91;
+  text-decoration: line-through;
+}
+
+.checkbox input:checked~span::before {
+  border-color: transparent;
+  transform: translateY(-50%) scale(0);
+}
+
+.checkbox input:checked~span::after {
+  opacity: 1;
+}
+
+.cart_empty {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart_empty img {
+  margin-top: 16px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONLINE TODO LIST</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+
+    <div class="left">
+      <img src="./img/left.png" alt="">
+    </div>
+
+    <div class="login">
+      <h1>最實用的線上代辦事項服務</h1>
+      <p>Email</p>
+      <p><input type="email" name="email" id="loginEmail" placeholder="請輸入Email">
+        <span class="info">此欄位不可為空</span>
+      </p>
+      <p>密碼</p>
+      <p><input type="password" name="password" id="loginPwd" placeholder="請輸入密碼"></p>
+      <p class="linkBtn"><input type="button" value="登入" class="btn" id="btnLogin">
+        <a href="#" id="linkReg">註冊帳號</a>
+      </p>
+    </div>
+
+    <div class="register">
+      <h1>註冊帳號</h1>
+      <p>Email</p>
+      <p><input type="email" name="email" id="regEmail" placeholder="請輸入Email"> </p>
+      <p>您的暱稱</p>
+      <p><input type="text" name="nickname" id="regNickname" placeholder="請輸入您的暱稱"> </p>
+      <p>密碼</p>
+      <p><input type="password" name="password" id="regPwd" placeholder="請輸入密碼"></p>
+      <p>再次輸入密碼</p>
+      <p><input type="password" name="password" id="regPwdAgain" placeholder="請再次輸入密碼"></p>
+      <p class="linkBtn"><input type="button" value="註冊帳號" class="btn" id="btnReg">
+        <a href="#" id="linkLogin">登入</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="todo">
+
+    <div class="title">
+      <img src="/img/logo.png" alt="">
+      <div class="logout">
+        <span id="userName">王小明</span>的代辦
+        <a href="#" id="linkLogout">登出</a>
+      </div>
+    </div>
+
+    <div class="contianer">
+      <div class="todolist">
+
+        <div class="card input">
+          <input type="text" placeholder="請輸入待辦事項" id="inputText" />
+          <a href="#" class="btn_add" id="btnAdd">+</a>
+        </div>
+
+        <div class="cart_empty">
+          <span>目前尚無待辦事項</span>
+          <img src="./img/empty 1.png" alt="">
+        </div>
+
+        <div class="card card_list">
+          <ul class="tab" id="tab">
+            <li class="active" data-tab="all">全部</li>
+            <li data-tab="work">待完成</li>
+            <li data-tab="done">已完成</li>
+          </ul>
+
+          <div class="cart_content">
+            <ul class="list" id="todoList">
+              <!-- <li>
+                <label class="checkbox" for="">
+                  <input type="checkbox" />
+                  <span>把冰箱發霉的檸檬拿去丟</span>
+                </label>
+                <a href="#" class="delete"></a>
+              </li>
+              <li>
+                <label class="checkbox" for="">
+                  <input type="checkbox" />
+                  <span>把冰箱發霉的檸檬拿去丟</span>
+                </label>
+                <a href="#" class="delete"></a>
+              </li> -->
+            </ul>
+            <div class="list_footer">
+              <p><span id="workNum">0</span> 個待完成項目</p>
+              <a href="#" id="btnDel">清除已完成項目</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="all.js"></script>
+</body>
+
+</html>
